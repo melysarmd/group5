@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Kompetisi Coding</title>
+    <style>
+         body 
+        {
+            font-family: 'Times New Roman';
+            font-size: larger;
+            color: navy;
+            background-color: lightslategray;
+        }
+        
+        h1 
+        {
+            color: navy;
+            text-align: center;
+            font-size: 50px;
+        }
+ 
+        .container 
+        {
+            width: 70%;
+            margin: auto;
+            padding: 20px;
+        }
+        
+        .form-group 
+        {
+            margin-bottom: 20px;
+        }
+
+        label 
+        {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input, textarea, select
+        {
+            width: 100%;
+            padding: 10px;
+            background-color: lightgrey;
+            
+        }
+        
+        button 
+        {
+            background-color: navy;
+            color: lightgray;
+            padding: 15px 30px;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Formulir Pendaftaran Kompetisi Coding</h1>
+        
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="namaPeserta">Nama Peserta:</label>
+                <input type="text" id="namaPeserta" name="namaPeserta" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="alamatEmail">Alamat Email:</label>
+                <input type="email" id="alamatEmail" name="alamatEmail" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="nomorTelepon">Nomor Telepon:</label>
+                <input type="tel" id="nomorTelepon" name="nomorTelepon" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="alamatRumah">Alamat Rumah:</label>
+                <textarea id="alamatRumah" name="alamatRumah" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="perguruanTinggi">Perguruan Tinggi/Universitas:</label>
+                <input type="text" id="perguruanTinggi" name="perguruanTinggi" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="jurusanStudi">Jurusan Studi:</label>
+                <input type="text" id="jurusanStudi" name="jurusanStudi" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="tanggalLahir">Tanggal Lahir:</label>
+                <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="pengalamancoding">Pengalaman Coding Sebelumnya:</label>
+                <textarea id="pengalamancoding" name="pengalamancoding"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="timIndividu">Tim atau Individu (Pilih Tim/Individu):</label>
+                <select id="timIndividu" name="timIndividu" required>
+                    <option value="tim">Tim</option>
+                    <option value="individu">Individu</option>
+                </select>
+            </div>
+            
+            <div class="form-group" id="anggotaTimDiv" style="display: none;">
+                <label for="anggotaTim">Anggota Tim (jika tim, masukkan nama anggota):</label>
+                <textarea id="anggotaTim" name="anggotaTim"></textarea>
+            </div>
+
+
+            <button type="submit">Daftar</button>
+        </form>
+     </div>
+</body>
+</html>
